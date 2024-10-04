@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55vh;
+  object-fit: cover;
+  z-index: -1;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+h2 {
+  letter-spacing: 0.25rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-decoration: underline yellow;
+}
+
+h3 {
+  letter-spacing: 0.25rem;
+  text-align: center;
+  margin-top: 1rem;
+  position: relative;
+  font-size: 1.2rem;
+  top: 8rem;
+  left: -10rem;
+}
+
+h4 {
+  letter-spacing: 0.25rem;
+  text-align: center;
+  margin-top: 1rem;
+  position: relative;
+  text-decoration: underline yellow;
+  top: 6rem;
+  left: 43rem;
+  font-size: 2rem;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.1rem;
+  padding: 4rem 3.5% 0.7rem;
+  font-size: 1.3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.image .img {
+  background-image: url(./asset/img1.jpg);
+  background-size: cover;
+  background-color: red;
+  margin: 1.5rem;
+  width: 10rem;
+  height: 15rem;
+}
+
+/* Media Queris Untuk Landing Page : Responsivitas */
+
+@media only screen and (max-width: 600px) {
+  .video-bg {
+    height: 15vh;
+  }
+
+  h1 {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  p {
+    font-size: 0.6rem;
+    margin-top: 0.75rem;
+  }
+
+  h2 {
+    font-size: 0.75rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h3 {
+    font-size: 0.6rem;
+    top: 2.5rem;
+    left: 0;
+  }
+
+  h4 {
+    font-size: 0.5rem;
+    top: 1.5rem;
+    left: 0;
+  }
+
+  .image {
+    display: block;
+    padding: 1rem 0.5rem;
+  }
+
+  .image .img {
+    margin: 0.5rem auto;
+    width: 45%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .video-bg {
+    height: 20vh;
+  }
+
+  h1 {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 0.75rem;
+    top: 5rem;
+    left: -7.5rem;
+  }
+
+  h4 {
+    font-size: 0.6rem;
+    top: 4rem;
+    left: 10rem;
+  }
+
+  .image .img {
+    width: 7.5rem;
+    height: 10rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  h3 {
+    font-size: 1.2rem;
+    top: 5rem;
+    left: -10rem;
+    margin-bottom: -1.8rem;
+  }
+
+  h4 {
+    font-size: 0.75rem;
+    top: 5rem;
+    left: 19rem;
+  }
+
+  .image .img {
+    width: 9rem;
+    height: 12.5rem;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  h3 {
+    font-size: 1rem;
+    top: 7.5rem;
+    left: -14rem;
+  }
+
+  h4 {
+    font-size: 0.5rem;
+    top: 6rem;
+    left: 21.5rem;
+  }
+
+  .image .img {
+    width: 10rem;
+    height: 15rem;
+  }
+}
